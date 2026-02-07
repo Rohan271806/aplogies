@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>i am so Sorry sweetheart ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg,white #ee9ca7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .card {
+      background:white;
+      width: 450px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0  20px 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 15px 0;
+      color: #e75480;
+    }
+
+    p {
+      font-size: 16px;
+      min-height: 60px;
+    }
+
+    button {
+
+     background: #e75480;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+     button {
+
+     background: #e75480;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    
+    button:hover {
+      background: #d6456d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>I am so Sorry sweetheart ❤️</h1>
+    <p id="quote"></p>
+    <button onclick="next()">Next</button>
+  <br>
+    <button onclick="next()">Forgive Me Please baby❤️</button>
+  </br>
+  </div>
+
+  <script>
+
+    const quotes = [
+      "I may mess up sometimes, but loving you is something I do perfectly.",
+      "I’m sorry for hurting you. You mean more to me than my pride ever could.",
+      "If I could go back and fix it, I would. Since I can’t, I promise to do better.",
+      "You’re my favorite person, and I hate being the reason you’re hurt.",
+      "Please forgive me. My heart is yours, always."
+    ];
+
+    let index = 0;
+
+    function next() {
+      document.getElementById("quote").textContent = quotes[index % quotes.length];
+      index++;
+    }
+
+    // Load first message automatically
+    next();
+  </script>
+
+</body>
+</html>
